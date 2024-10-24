@@ -53,13 +53,7 @@
 							<BP_JPROFILER_ENABLED>true</BP_JPROFILER_ENABLED>
 						</env>
 						<buildpacks>
-							<buildpack>paketo-buildpacks/ca-certificates</buildpack>
-							<buildpack>paketo-buildpacks/bellsoft-liberica</buildpack>
-							<buildpack>paketo-buildpacks/syft</buildpack>
-							<buildpack>paketo-buildpacks/executable-jar</buildpack>
-							<buildpack>paketo-buildpacks/dist-zip</buildpack>
-							<buildpack>paketo-buildpacks/spring-boot</buildpack>
-							<!-- custom buildpacks: (comment out and run `mvn spring-boot:build-image` to get list above)-->
+							<buildpack>urn:cnb:builder:paketo-buildpacks/java</buildpack>
 							<buildpack>docker.io/paketobuildpacks/jprofiler</buildpack>
 						</buildpacks>
 					</image>
